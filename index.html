@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Лінійні блоки</title>
+    <style>
+      body {
+        font-size: 24px;
+      }
+	.container {
+		background-color: #DDDDDD;
+		padding: 4px;
+		display: grid;
+		grid-template-areas:
+		'header header header header header header'
+		'sub-left sub-left sub-left sub-right sub-right sub-right'
+		'left-menu left-menu main-area main-area main-area right-area' 'footer footer footer footer footer footer';
+		grid-gap: 5px;
+		text-align: center;
+		font-size: 24pt;
+		}
+
+
+	.container div {
+
+				padding-top: 20px;
+				padding-bottom: 20px;
+			}
+				.header {
+				grid-area: header;
+				background-color: #DDDD77;
+			}
+				.sub-left {
+
+				grid-area: sub-left;
+				background-color: yellow;
+			}
+				.sub-right
+				{ 
+				grid-area: sub-right;
+				background-color: yellow;
+			}
+
+				.left-menu {
+				grid-area: left-menu;
+				background-color: #DD5555;
+				height: 300px;
+			}
+				.main-area {
+				
+				grid-area: main-area;
+				background-color: #880088;
+
+			}
+				.right-area {
+
+				grid-area: right-area;
+				background-color: #44AA33;
+			}
+				.footer {
+				grid-area: footer;
+				background-color: #FFAA00;
+					}
+		     p {
+		        background-color: #EEEEEE;
+		      }
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="header">Зaголовок</div>
+		<div class="sub-left">Пiдзаголовок - 1</div>
+		<div class="sub-right">Пiдзаголовок - 2</div>
+		<div class="left-menu">Додаткове меню</div>
+		<div class="main-area">Основний вмicт</div>
+		<div class="right-area">Допомiжнi данi</div>
+		<div class="footer">Пiдвал</div>
+	</div>
+</div>
+</body>
+</html>
