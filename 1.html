@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Проста галерея</title>
+    <style>
+		
+		.container {
+		background-color: #DDDDDD;
+		padding: 4px;
+		display: grid;
+		grid-template-areas:
+		'header header header header header header'
+		'sub-left sub-left sub-left sub-right sub-right sub-right'
+		'left-menu left-menu main-area main-area main-area right-area' 'footer footer footer footer footer footer';
+		grid-gap: 5px;
+		text-align: center;
+		font-size: 24pt;
+		}
+
+	.container div {
+			background-color: #A2A2EE;
+			text-align: center;
+			padding: 4px;
+			max-width: 300px;
+			min-width: 150px;
+		}
+		.container div img {
+			width: 100%;
+		}
+	</style>
+</head>
+<body>
+  <div class="container">
+    <div><img src="images/img1.jpg" /></div>
+    <div><img src="images/img2.jpg" /></div>
+    <div><img src="images/img3.jpg" /></div>
+    <div><img src="images/img4.jpg" /></div>
+    <div><img src="images/img5.jpg" /></div>
+  </div>
+</div>
+</body>
+</html>
